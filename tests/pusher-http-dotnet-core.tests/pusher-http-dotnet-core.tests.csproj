@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>pusher-http-dotnet-core.tests</AssemblyName>
+    <PackageId>pusher-http-dotnet-core.tests</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net45+win8</PackageTargetFallback>
+    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/pusher-http-dotnet-core/pusher-http-dotnet-core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Xml" Version="4.1.1" />
+    <PackageReference Include="RestSharp.NetCore" Version="105.2.4-rc4-24214-01" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.2.0" />
+    <PackageReference Include="NUnit" Version="3.4.1" />
+    <PackageReference Include="dotnet-test-nunit" Version="3.4.0-beta-2" />
+    <PackageReference Include="NSubstitute" Version="2.0.0-rc" />
+  </ItemGroup>
+
+</Project>
